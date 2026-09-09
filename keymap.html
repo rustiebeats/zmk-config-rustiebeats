@@ -200,6 +200,12 @@ footer{
   display:flex; flex-wrap:wrap; gap:6px 18px;
 }
 footer code{font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--ink-2)}
+@media print{
+  .page{gap:24px; padding-bottom:0}
+  footer{break-inside:avoid; margin-top:-16px; padding-top:8px}
+  .board-wrap{overflow:visible}
+  .board{zoom:.86}
+}
 </style>
 
 <div class="page">
@@ -308,19 +314,19 @@ footer code{font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--
   {n:0, name:'Base', how:'Always on \u00B7 QWERTY',
    left:{
      top:[K('Q'),K('W'),K('E'),K('R'),K('T')],
-     home:[K('A','mod','\u2303'),K('S','mod','\u2325'),K('D','mod','\u2318'),K('F','mod','\u21E7'),K('G')],
-     bottom:[K('TAB'),K('Z'),K('X'),K('C','mod','meh'),K('V','mod','hyper'),K('B')],
+     home:[K('A','mod','\u2318'),K('S','mod','\u2325'),K('D','mod','\u2303'),K('F','mod','\u21E7'),K('G')],
+     bottom:[K('ESC'),K('Z'),K('X'),K('C','mod','meh'),K('V','mod','hyper'),K('B')],
      thumb:[K('ESC','lay','util'),K('SPACE','lay','nav'),K('TAB')]},
    right:{
      top:[K('Y'),K('U'),K('I'),K('O'),K('P')],
-     home:[K('H'),K('J','mod','\u21E7'),K('K','mod','\u2318'),K('L','mod','\u2325'),K("'",'mod','\u2303')],
-     bottom:[K('N'),K('M','mod','hyper'),K(',','mod','meh',';'),K('.','sym',null,':'),K('?','sym',null,'!'),K('TAB')],
+     home:[K('H'),K('J','mod','\u21E7'),K('K','mod','\u2303'),K('L','mod','\u2325'),K(';','mod','\u2318')],
+     bottom:[K('N'),K('M','mod','hyper'),K(',','mod','meh',';'),K('.','sym',null,':'),K('?','sym',null,'!'),K("'")],
      thumb:[K('ENTER'),K('BKSP','lay','num'),K('DEL','lay','fun')]}},
 
   {n:1, name:'Nav', how:'Hold <b>space</b> \u00B7 left middle thumb',
    left:{
      top:[T,T,T,T,T],
-     home:[K('\u2303','mod'),K('\u2325','mod'),K('\u2318','mod'),K('\u21E7','mod'),T],
+     home:[K('\u2318','mod'),K('\u2325','mod'),K('\u2303','mod'),K('\u21E7','mod'),T],
      bottom:[K('\u2318[','nav'),T,T,K('meh','mod'),K('hyper','mod'),T],
      thumb:[T,T,T]},
    right:{
@@ -337,7 +343,7 @@ footer code{font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--
      thumb:[T,K('0'),K(';','sym')]},
    right:{
      top:[T,T,T,T,T],
-     home:[T,K('\u21E7','mod'),K('\u2318','mod'),K('\u2325','mod'),K('\u2303','mod')],
+     home:[T,K('\u21E7','mod'),K('\u2303','mod'),K('\u2325','mod'),K('\u2318','mod')],
      bottom:[T,K('hyper','mod'),K('meh','mod'),T,T,K(')','sym')],
      thumb:[T,T,T]}},
 
@@ -349,14 +355,14 @@ footer code{font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--
      thumb:[T,T,T]},
    right:{
      top:[T,T,T,T,T],
-     home:[T,K('\u21E7','mod'),K('\u2318','mod'),K('\u2325','mod'),K('\u2303','mod')],
+     home:[T,K('\u21E7','mod'),K('\u2303','mod'),K('\u2325','mod'),K('\u2318','mod')],
      bottom:[T,K('hyper','mod'),K('meh','mod'),T,T,T],
      thumb:[T,T,T]}},
 
   {n:4, name:'Util', how:'Hold <b>esc</b> \u00B7 left outer thumb',
    left:{
      top:[K('BT 0','sys'),K('BT 1','sys'),K('BT 2','sys'),K('BT CLR','sys'),T],
-     home:[K('\u2303','mod'),K('\u2325','mod'),K('\u2318','mod'),K('\u21E7','mod'),T],
+     home:[K('\u2318','mod'),K('\u2325','mod'),K('\u2303','mod'),K('\u21E7','mod'),T],
      bottom:[T,T,T,T,K('hyper','mod'),T],
      thumb:[T,T,T]},
    right:{

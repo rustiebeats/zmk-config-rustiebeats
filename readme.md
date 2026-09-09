@@ -11,4 +11,4 @@ Caps word is activated by the `Z` + `X` combo. As I find it easier to have a ded
 
 Having all the mods in the home row makes it pretty easy to mash a bunch of them to get Hyper (Shift + Command + Option + Control) or Meh (Shift + Option + Control), but --- just because I can --- I have the index and middle finger keys on the bottom row as Hyper and Meh mod taps too. That makes it very easy to create useful keyboard shortcuts for global OS use without any fear of clashes.
 
-Finally, the extra outer pinky key is Tab on the base layer, back/forward in navigation history on the nav layer, and parens on the number layer. I tend not to hit those keys accidentally as they are way out there, but it is useful to have dedicated and spatially organised keys for common navigation stuff.
+Finally, the extra outer pinky keys are Escape on the far left and apostrophe on the far right of the base layer, back/forward in navigation history on the nav layer, and parens on the number layer. I tend not to hit those keys accidentally as they are way out there, but it is useful to have dedicated and spatially organised keys for common navigation stuff.
