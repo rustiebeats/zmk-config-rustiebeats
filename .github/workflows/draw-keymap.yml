@@ -1,0 +1,21 @@
+name: Draw ZMK keymap
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "config/**"
+      - "zmk-nodefree-config/**"
+      - ".github/workflows/draw-keymap.yml"
+
+jobs:
+  draw:
+    permissions:
+      contents: write
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@e855a57cf6f5851b8235b56a69d46fa0646b26e8
+    with:
+      keymap_patterns: "config/totem.keymap"
+      output_folder: "keymap-drawer"
+      commit_message: "render keymap diagram"
+      fail_on_error: true
+
