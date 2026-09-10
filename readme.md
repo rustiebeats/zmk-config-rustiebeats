@@ -1,16 +1,37 @@
-# ZMK Miryoku-inspired firmware for the TOTEM keyboard
+# ZMK firmware for the TOTEM keyboard
 
-The whole keymap --- all five layers and all thirty combos --- is shown in the
-[generated keymap diagram](./keymap-drawer/totem.svg). It is regenerated from
-[`config/totem.keymap`](./config/totem.keymap) by
-[keymap-drawer](https://github.com/caksoylar/keymap-drawer) whenever the keymap
-configuration changes.
+This repository contains my [ZMK](https://zmk.dev/) configuration for the
+[TOTEM](https://github.com/GEIGEIGEIST/TOTEM), inspired by
+[Miryoku](https://github.com/manna-harbour/miryoku_zmk) and
+[urob's ZMK configuration](https://github.com/urob/zmk-config).
 
-This is a ZMK firmware for a [TOTEM keyboard](https://github.com/GEIGEIGEIST/TOTEM), using a keymap that is pretty much copied from both the great [Miryoku layout](https://github.com/manna-harbour/miryoku_zmk), and [urob's ZMK config](https://github.com/urob/zmk-config). I use the alternate hand layout of most of the layers (so that the layer key and modifiers are on one hand, and the main keys of that layout on the other), but combine that with urob's idea of having symbols as combos. I have also adopted his "Timer-less home row mods", which work really well and avoid the usual drawbacks of home row mods.
+## Keymap
 
-Caps word is activated by the `Z` + `X` combo. As I find it easier to have a dedicated shift for capitalising words, one-shot shift also lives on a combo --- `S` + `F` on the left hand, `J` + `L` on the right --- and I use that for capitalisation, keeping the home row shift for keyboard shortcut combos.
+[![Generated diagram of the TOTEM keymap](./keymap-drawer/totem.svg)](./keymap-drawer/totem.svg)
 
-Having all the mods in the home row makes it pretty easy to mash a bunch of them to get Hyper (Shift + Command + Option + Control) or Meh (Shift + Option + Control), but --- just because I can --- I have the index and middle finger keys on the bottom row as Hyper and Meh mod taps too. That makes it very easy to create useful keyboard shortcuts for global OS use without any fear of clashes.
+The diagram shows all five layers and all thirty combos. It is generated
+automatically from [`config/totem.keymap`](./config/totem.keymap) and its
+included configuration files by
+[keymap-drawer](https://github.com/caksoylar/keymap-drawer). Changes to the ZMK
+configuration regenerate and commit the SVG and parsed YAML automatically.
 
-Finally, the extra outer pinky keys are Escape on the far left and apostrophe on the far right of the base layer, back/forward in navigation history on the nav layer, and parens on the number layer. I tend not to hit those keys accidentally as they are way out there, but it is useful to have dedicated and spatially organised keys for common navigation stuff.
+## Layout highlights
+
+- The base layer uses QWERTY with home-row modifiers. On `A S D F`, holding a
+  key produces GUI, Alt, Ctrl, or Shift. The order is mirrored on `J K L ;`.
+- The far-left outer key is Escape and the far-right outer key is apostrophe.
+  Those positions become browser back/forward on the navigation layer and
+  parentheses on the number layer.
+- The thumb keys provide Escape/Utility, Space/Navigation, Tab, Enter,
+  Backspace/Number, and Delete/Function.
+- `Z` + `X` activates Caps Word. `S` + `F` and `J` + `L` provide one-shot
+  Shift.
+- Symbols are primarily available through combos, while the alternate-hand
+  layers keep modifiers on one hand and their main keys on the other.
+- Bottom-row mod-taps provide Hyper (Shift + Ctrl + Alt + GUI) and Meh
+  (Shift + Ctrl + Alt) for system shortcuts.
+
+The home-row modifiers use opposite-hand triggers and release-based hold
+decisions to support comfortable rolling key sequences.
+
 
