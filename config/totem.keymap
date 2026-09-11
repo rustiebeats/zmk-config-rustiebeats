@@ -124,7 +124,7 @@ BACK        ___           ___          &kp MEH        &kp HYP         ___       
             &kp PLUS     &kp N7       &kp N8          &kp  N9         &kp STAR           ___           ___               ___             ___           ___
             &kp DOT      &kp N4       &kp N5          &kp  N6         &kp EQUAL          ___           &kp RSHFT         &kp RCTRL       &kp RALT      &kp RGUI
   &kp LPAR  &kp MINUS    &kp N1       &kp N2          &kp  N3         &kp FSLH           ___           &kp HYP           &kp MEH         ___           ___            &kp RPAR
-                                      ___             &kp  N0         &kp SEMI           ___           ___               ___
+                                      &kp N0          ___             &kp SEMI           ___           ___               ___
             >;
         };
         fun_layer {
@@ -155,4 +155,5 @@ BACK        ___           ___          &kp MEH        &kp HYP         ___       
    ╰───────╮ 32  33  34 │ 35  36  37 ╭───────╯     ╰───────╮ LH2 LH1 LH0 │ RH0 RH1 RH2 ╭───────╯
            ╰────────────┴────────────╯                     ╰─────────────┴─────────────╯             */
 // use global-quick-tap-ms for combos (requires PR 1387)
+
 
