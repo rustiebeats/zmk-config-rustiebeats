@@ -33,6 +33,8 @@ ZMK_COMBO(equal, &kp EQUAL,     LM1 LB1,     BASE NAV NUM, COMBO_TERM_SLOW)
 ZMK_COMBO(tilde, &kp TILDE,     LM0 LB0,     BASE NAV NUM, COMBO_TERM_SLOW)
 
 // Horizontal combos
+ZMK_COMBO(esc,      &kp ESC,       LT4 LT3,         BASE,         COMBO_TERM_FAST)
+ZMK_COMBO(tab,      &kp TAB,       LM4 LM3,         BASE,         COMBO_TERM_FAST)
 ZMK_COMBO(lbkt,     &kp LBKT,      LT3 LT2 LT1,     BASE NAV NUM, COMBO_TERM_FAST)
 ZMK_COMBO(lpar,     &kp LPAR,      LT2 LT1,     BASE NAV NUM, COMBO_TERM_FAST)
 ZMK_COMBO(lbrc,     &kp LBRC,      LT3 LT2,     BASE NAV NUM, COMBO_TERM_FAST)
