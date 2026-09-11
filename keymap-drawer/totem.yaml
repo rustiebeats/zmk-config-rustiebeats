@@ -286,3 +286,6 @@ combos:
 - p: [16, 18]
   k: {t: LSHFT, h: sticky}
   l: [default, nav, num]
+- p: [28, 29]
+  k: LANG HANGEUL
+  l: [default]

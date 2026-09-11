@@ -438,6 +438,12 @@ path.combo {
 <text x="641" y="115" class="combo tap">LSHFT</text>
 <text x="641" y="126" class="combo hold">sticky</text>
 </g>
+<g class="combo combopos-30">
+<rect rx="6" ry="6" x="655" y="144" width="28" height="26" class="combo"/>
+<text x="669" y="157" class="combo tap">
+<tspan x="669" dy="-0.6em">LANG</tspan><tspan x="669" dy="1.2em">HANGEUL</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 366)" class="layer-nav">
