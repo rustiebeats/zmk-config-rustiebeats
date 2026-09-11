@@ -289,6 +289,9 @@ combos:
 - p: [6, 9]
   k: '>'
   l: [default, nav, num]
+- p: [18, 19]
+  k: RET
+  l: [default]
 - p: [16, 18]
   k: {t: LSHFT, h: sticky}
   l: [default, nav, num]
