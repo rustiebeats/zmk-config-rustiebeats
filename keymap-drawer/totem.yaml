@@ -21,7 +21,7 @@ layers:
   - {t: K, h: RCTRL}
   - {t: L, h: RALT}
   - {t: ;, h: RGUI}
-  - ESC
+  - BSPC
   - Z
   - X
   - {t: C, h: Sft+Ctl+LALT}
@@ -220,6 +220,12 @@ combos:
 - p: [14, 25]
   k: '~'
   l: [default, nav, num]
+- p: [0, 1]
+  k: ESC
+  l: [default]
+- p: [10, 11]
+  k: TAB
+  l: [default]
 - p: [1, 2, 3]
   k: '['
   l: [default, nav, num]
