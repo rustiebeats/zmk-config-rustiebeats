@@ -9,7 +9,7 @@ This repository contains my [ZMK](https://zmk.dev/) configuration for the
 
 [![Generated diagram of the TOTEM keymap](./keymap-drawer/totem.svg)](./keymap-drawer/totem.svg)
 
-The diagram shows all five layers and all thirty combos. It is generated
+The diagram shows all five layers and all thirty-one combos. It is generated
 automatically from [`config/totem.keymap`](./config/totem.keymap) and its
 included configuration files by
 [keymap-drawer](https://github.com/caksoylar/keymap-drawer). Changes to the ZMK
@@ -33,5 +33,6 @@ configuration regenerate and commit the SVG and parsed YAML automatically.
 
 The home-row modifiers use opposite-hand triggers and release-based hold
 decisions to support comfortable rolling key sequences.
+
 
 
