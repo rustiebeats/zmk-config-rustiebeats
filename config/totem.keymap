@@ -114,7 +114,7 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
         nav_layer {
             bindings = <
             ___           ___          ___            ___             ___                ___           &kp HOME          ___              &kp END       ___
-            &kp LGUI      &kp LALT     &kp LCTRL      &kp LSHFT       ___                ___           &kp LEFT          &kp DOWN         &kp UP        &kp RIGHT
+            &kp LGUI      &kp LALT     &kp LCTRL      &kp LSHFT       ___                &kp LEFT      &kp DOWN          &kp UP           &kp RIGHT     ___
 BACK        ___           ___          &kp MEH        &kp HYP         ___                ___           &kp TILDE         &kp PAGE_DOWN    &kp PAGE_UP   ___    FWD
                                        ___            ___             ___                &kp RET       &kp BSPC          &kp DEL
             >;
@@ -155,3 +155,4 @@ BACK        ___           ___          &kp MEH        &kp HYP         ___       
    ╰───────╮ 32  33  34 │ 35  36  37 ╭───────╯     ╰───────╮ LH2 LH1 LH0 │ RH0 RH1 RH2 ╭───────╯
            ╰────────────┴────────────╯                     ╰─────────────┴─────────────╯             */
 // use global-quick-tap-ms for combos (requires PR 1387)
+
