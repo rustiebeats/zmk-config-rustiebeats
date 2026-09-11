@@ -55,11 +55,11 @@ layers:
   - LCTRL
   - LSHFT
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - LEFT
   - DOWN
   - UP
   - RIGHT
+  - {t: ▽, type: trans}
   - Gui+[
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
