@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: totem}
 layers:
-  default:
+  Base:
   - Q
   - W
   - E
@@ -11,290 +11,290 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: LGUI}
-  - {t: S, h: LALT}
-  - {t: D, h: LCTRL}
-  - {t: F, h: LSHFT}
+  - {t: A, h: Gui}
+  - {t: S, h: Alt}
+  - {t: D, h: Ctrl}
+  - {t: F, h: Shift}
   - G
   - H
-  - {t: J, h: RSHFT}
-  - {t: K, h: RCTRL}
-  - {t: L, h: RALT}
-  - {t: ;, h: RGUI}
-  - BSPC
+  - {t: J, h: Shift}
+  - {t: K, h: Ctrl}
+  - {t: L, h: Alt}
+  - {t: ;, h: Gui}
+  - Bksp
   - Z
   - X
-  - {t: C, h: Sft+Ctl+LALT}
-  - {t: V, h: Meh+LGUI}
+  - {t: C, h: Meh}
+  - {t: V, h: Hyper}
   - B
   - N
-  - {t: M, h: Meh+LGUI}
-  - {t: ',', h: Sft+Ctl+LALT, s: ;}
+  - {t: M, h: Hyper}
+  - {t: ',', h: Meh, s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
   - ''''
-  - {t: ESC, h: util}
-  - {t: SPACE, h: nav}
-  - TAB
-  - RET
-  - {t: BSPC, h: num}
-  - {t: DEL, h: fun}
-  nav:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - HOME
-  - {t: ▽, type: trans}
-  - END
-  - {t: ▽, type: trans}
-  - LGUI
-  - LALT
-  - LCTRL
-  - LSHFT
-  - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - {t: ▽, type: trans}
+  - {t: Esc, h: Utility}
+  - {t: Space, h: Navigation}
+  - Tab
+  - Enter
+  - {t: Bksp, h: Numbers}
+  - {t: Del, h: Function}
+  Navigation:
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - Home
+  - {t: ·, type: trans}
+  - End
+  - {t: ·, type: trans}
+  - Gui
+  - Alt
+  - Ctrl
+  - Shift
+  - {t: ·, type: trans}
+  - ←
+  - ↓
+  - ↑
+  - →
+  - {t: ·, type: trans}
   - Gui+[
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Sft+Ctl+LALT
-  - Meh+LGUI
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - Meh
+  - Hyper
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
   - '~'
-  - PAGE DOWN
-  - PAGE UP
-  - {t: ▽, type: trans}
+  - PgDn
+  - PgUp
+  - {t: ·, type: trans}
   - Gui+]
-  - {t: ▽, type: trans}
+  - {t: ·, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - RET
-  - BSPC
-  - DEL
-  num:
+  - {t: ·, type: trans}
+  - Enter
+  - Bksp
+  - Del
+  Numbers:
   - +
   - '7'
   - '8'
   - '9'
   - '*'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
   - .
   - '4'
   - '5'
   - '6'
   - '='
-  - {t: ▽, type: trans}
-  - RSHFT
-  - RCTRL
-  - RALT
-  - RGUI
+  - {t: ·, type: trans}
+  - Shift
+  - Ctrl
+  - Alt
+  - Gui
   - (
   - '-'
   - '1'
   - '2'
   - '3'
   - /
-  - {t: ▽, type: trans}
-  - Meh+LGUI
-  - Sft+Ctl+LALT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: ·, type: trans}
+  - Hyper
+  - Meh
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
   - )
   - '0'
-  - {t: ▽, type: trans}
+  - {t: ·, type: trans}
   - ;
-  - {t: ▽, type: trans}
+  - {t: ·, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  fun:
+  - {t: ·, type: trans}
+  Function:
   - F12
   - F7
   - F8
   - F9
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
   - F11
   - F4
   - F5
   - F6
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - RSHFT
-  - RCTRL
-  - RALT
-  - RGUI
-  - {t: ▽, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - Shift
+  - Ctrl
+  - Alt
+  - Gui
+  - {t: ·, type: trans}
   - F10
   - F1
   - F2
   - F3
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Meh+LGUI
-  - Sft+Ctl+LALT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - Hyper
+  - Meh
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
   - {type: held}
-  util:
+  Utility:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - BT CLR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BRI DN
-  - BRI UP
-  - {t: ▽, type: trans}
-  - LGUI
-  - LALT
-  - LCTRL
-  - LSHFT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - VOL DN
-  - VOL UP
-  - {t: ▽, type: trans}
-  - PSCRN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Meh+LGUI
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - Bri −
+  - Bri +
+  - {t: ·, type: trans}
+  - Gui
+  - Alt
+  - Ctrl
+  - Shift
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - Vol −
+  - Vol +
+  - {t: ·, type: trans}
+  - PrtSc
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - Hyper
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - MUTE
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - {t: ·, type: trans}
+  - Mute
 combos:
 - p: [1, 11]
   k: '@'
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [2, 12]
   k: '#'
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [3, 13]
   k: $
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [4, 14]
   k: '%'
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [11, 22]
   k: '`'
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [12, 23]
   k: \
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [13, 24]
   k: '='
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [14, 25]
   k: '~'
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [0, 1]
-  k: ESC
-  l: [default]
+  k: Esc
+  l: [Base]
 - p: [10, 11]
-  k: TAB
-  l: [default]
+  k: Tab
+  l: [Base]
 - p: [1, 2, 3]
   k: '['
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [2, 3]
   k: (
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [1, 2]
   k: '{'
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [3, 0]
   k: <
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [22, 24]
   k: Gui+X
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [22, 23]
   k: Gui+C
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [23, 24]
   k: Gui+V
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [13, 11]
-  k: {t: LSHFT, h: sticky}
-  l: [default, nav, num]
+  k: {t: Shift, h: sticky}
+  l: [Base, Navigation, Numbers]
 - p: [21, 22]
   k: '&caps_word'
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [5, 15]
   k: ^
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [6, 16]
   k: +
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [7, 17]
   k: '*'
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [8, 18]
   k: '&'
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [15, 26]
   k: _
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [16, 27]
   k: '-'
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [17, 28]
   k: /
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [18, 29]
   k: '|'
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [6, 7, 8]
   k: ']'
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [6, 7]
   k: )
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [8, 7]
   k: '}'
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [6, 9]
   k: '>'
-  l: [default, nav, num]
+  l: [Base, Navigation, Numbers]
 - p: [18, 19]
-  k: RET
-  l: [default]
+  k: Enter
+  l: [Base]
 - p: [16, 18]
-  k: {t: LSHFT, h: sticky}
-  l: [default, nav, num]
+  k: {t: Shift, h: sticky}
+  l: [Base, Navigation, Numbers]
 - p: [28, 29]
-  k: LANG HANGEUL
-  l: [default]
+  k: 한/영
+  l: [Base]

@@ -14,6 +14,9 @@ automatically from [`config/totem.keymap`](./config/totem.keymap) and its
 included configuration files by
 [keymap-drawer](https://github.com/caksoylar/keymap-drawer). Changes to the ZMK
 configuration regenerate and commit the SVG and parsed YAML automatically.
+Rendering styles and key labels are configured in
+[`keymap_drawer.config.yaml`](./keymap_drawer.config.yaml). The diagram uses
+separate combo panels, with highlighted keys showing each chord.
 
 ## Layout highlights
 

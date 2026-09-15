@@ -1,0 +1,100 @@
+# Presentation only: firmware bindings remain in config/totem.keymap.
+draw_config:
+  key_h: 60
+  key_rx: 8
+  key_ry: 8
+  outer_pad_w: 40
+  outer_pad_h: 65
+  small_pad: 5
+  separate_combo_diagrams: true
+  combo_diagrams_scale: 3
+  append_colon_to_layer_header: false
+  footer_text: "TOTEM · 38 keys · Tap labels / hold legends · Highlighted keys form combos"
+  svg_extra_style: |
+    svg.keymap {
+      font-family: "Segoe UI", "Noto Sans", sans-serif;
+      font-size: 14px;
+      fill: #243449;
+      background-color: #f5f7fb;
+    }
+    rect.key { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.2; }
+    text.label { font-size: 21px; font-weight: 700; fill: #334b70; stroke: none; }
+    text.tap { font-weight: 600; }
+    text.hold, text.shifted { font-size: 10px; fill: #64748b; }
+    rect.trans { fill: #edf1f7; stroke: #dce3ed; }
+    text.trans { fill: #a5b1c2; }
+    rect.held, rect.combo.held { fill: #bce8df; stroke: #449b8a; }
+    rect.combo, rect.combo-separate { fill: #dce7fc; stroke: #8ba7d1; }
+    text.layer-activator { fill: #43699e; font-weight: 700; text-decoration: none; }
+    text.footer { font-size: 12px; fill: #64748b; stroke: none; }
+
+parse_config:
+  trans_legend: {t: "·", type: trans}
+  zmk_keycode_map:
+    # This map replaces upstream defaults; retain the symbols used by TOTEM.
+    EXCL: "!"
+    AT: "@"
+    HASH: "#"
+    DLLR: "$"
+    PRCNT: "%"
+    CARET: "^"
+    AMPS: "&"
+    STAR: "*"
+    LPAR: "("
+    RPAR: ")"
+    EQUAL: "="
+    PLUS: "+"
+    MINUS: "-"
+    UNDERSCORE: "_"
+    UNDER: "_"
+    FSLH: "/"
+    QMARK: "?"
+    BSLH: '\'
+    PIPE: "|"
+    SEMICOLON: ";"
+    SEMI: ";"
+    COLON: ":"
+    APOS: "'"
+    COMMA: ","
+    LT: "<"
+    DOT: "."
+    GT: ">"
+    LBKT: "["
+    RBKT: "]"
+    LBRC: "{"
+    RBRC: "}"
+    GRAVE: "`"
+    TILDE: "~"
+    LS(LC(LA(LGUI))): Hyper
+    LS(LC(LALT)): Meh
+    LGUI: Gui
+    RGUI: Gui
+    LALT: Alt
+    RALT: Alt
+    LCTRL: Ctrl
+    RCTRL: Ctrl
+    LSHFT: Shift
+    RSHFT: Shift
+    BSPC: Bksp
+    BACKSPACE: Bksp
+    RET: Enter
+    ENTER: Enter
+    ESC: Esc
+    TAB: Tab
+    SPACE: Space
+    DEL: Del
+    PSCRN: PrtSc
+    LEFT: "←"
+    DOWN: "↓"
+    UP: "↑"
+    RIGHT: "→"
+    HOME: Home
+    END: End
+    PAGE_UP: PgUp
+    PAGE_DOWN: PgDn
+    C_BRI_DN: Bri −
+    C_BRI_UP: Bri +
+    C_VOL_DN: Vol −
+    C_VOL_UP: Vol +
+    C_MUTE: Mute
+    LANG_HANGEUL: 한/영

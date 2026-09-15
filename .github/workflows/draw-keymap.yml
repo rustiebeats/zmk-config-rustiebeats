@@ -6,6 +6,7 @@ on:
     paths:
       - "config/**"
       - "zmk-nodefree-config/**"
+      - "keymap_drawer.config.yaml"
       - ".github/workflows/draw-keymap.yml"
 
 jobs:
@@ -15,6 +16,8 @@ jobs:
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@e855a57cf6f5851b8235b56a69d46fa0646b26e8
     with:
       keymap_patterns: "config/totem.keymap"
+      config_path: "keymap_drawer.config.yaml"
+      parse_args: "totem:'--layer-names Base Navigation Numbers Function Utility'"
       output_folder: "keymap-drawer"
       commit_message: "render keymap diagram"
       fail_on_error: true
