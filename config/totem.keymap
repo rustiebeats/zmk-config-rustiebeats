@@ -139,7 +139,7 @@ BACK        ___           ___          &kp MEH        &kp HYP         ___       
             bindings = <
             &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_CLR     ___                ___           ___               &kp C_BRI_DN    &kp C_BRI_UP  ___
             &kp LGUI      &kp LALT     &kp LCTRL      &kp LSHFT      ___                ___           ___               &kp C_VOL_DN    &kp C_VOL_UP  ___
-    ___     ___          ___          ___             &kp HYP        ___                ___           ___               ___             ___           ___             ___
+&kp PSCRN   ___          ___          ___             &kp HYP        ___                ___           ___               ___             ___           ___             ___
                                       ___             ___            ___                ___           ___               &kp C_MUTE
             >;
         };

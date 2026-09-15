@@ -22,6 +22,7 @@ configuration regenerate and commit the SVG and parsed YAML automatically.
 - The far-left outer key is Backspace and the far-right outer key is apostrophe.
   Those positions become browser back/forward on the navigation layer and
   parentheses on the number layer.
+- The far-left outer key sends Print Screen on the utility layer.
 - The thumb keys provide Escape/Utility, Space/Navigation, Tab, Enter,
   Backspace/Number, and Delete/Function.
 - `Q` + `W` sends Escape, `A` + `S` sends Tab, `L` + `;` sends Enter, and
